@@ -1,5 +1,5 @@
 function Topbar() {
-  return <div>Topbar</div>;
+  return <div className="w-full bg-green-300">Topbar</div>;
 }
 
 export default Topbar;

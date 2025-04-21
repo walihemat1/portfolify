@@ -1,5 +1,5 @@
 function BuilderCanvas() {
-  return <div>BuilderCanvas</div>;
+  return <div className="w-full h-screen bg-red-400">BuilderCanvas</div>;
 }
 
 export default BuilderCanvas;
