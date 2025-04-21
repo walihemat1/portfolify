@@ -4,11 +4,13 @@ import BuilderCanvas from "./BuilderCanvas";
 
 function AppLayout() {
   return (
-    <>
-      <Topbar />
+    <div className="grid">
+      <div className="col-span-2">
+        <Topbar />
+      </div>
       <Sidebar />
       <BuilderCanvas />
-    </>
+    </div>
   );
 }
 
