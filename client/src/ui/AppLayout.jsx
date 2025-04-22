@@ -4,12 +4,18 @@ import BuilderCanvas from "./BuilderCanvas";
 
 function AppLayout() {
   return (
-    <div className="grid">
-      <div className="col-span-2">
-        <Topbar />
+    <div className="flex h-screen">
+      <aside className="w-52">
+        <Sidebar />
+      </aside>
+      <div className="flex flex-col flex-1">
+        <div className="h-16">
+          <Topbar />
+        </div>
+        <main className="flex-1 overflow-y-auto">
+          <BuilderCanvas />
+        </main>
       </div>
-      <Sidebar />
-      <BuilderCanvas />
     </div>
   );
 }

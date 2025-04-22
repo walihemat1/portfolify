@@ -1,5 +1,5 @@
 function Sidebar() {
-  return <div className="w-full text-white bg-blue-500 h-screens">Sidebar</div>;
+  return <div className="w-full h-full text-white bg-blue-500">Sidebar</div>;
 }
 
 export default Sidebar;
