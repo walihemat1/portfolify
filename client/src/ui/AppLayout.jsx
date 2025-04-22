@@ -22,12 +22,12 @@ import BuilderCanvas from "./BuilderCanvas";
 
 function AppLayout() {
   return (
-    <div className="grid grid-cols-[20rem_1fr] grid-rows-[auto_1fr] h-screen">
+    <div className="grid grid-cols-[20rem_1fr] grid-rows-[auto_1fr] h-screen bg-background-light dark:bg-background-dark">
       <Topbar />
 
       <Sidebar />
 
-      <main>
+      <main className="container mx-auto">
         <BuilderCanvas />
       </main>
     </div>
