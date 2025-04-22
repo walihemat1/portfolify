@@ -1,5 +1,7 @@
 function Topbar() {
-  return <div className="w-full h-full bg-green-300">Topbar</div>;
+  return (
+    <header className="w-full col-start-2 bg-green-300 h-14">Topbar</header>
+  );
 }
 
 export default Topbar;

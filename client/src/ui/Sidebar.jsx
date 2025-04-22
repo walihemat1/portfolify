@@ -1,5 +1,9 @@
 function Sidebar() {
-  return <div className="w-full h-full text-white bg-blue-500">Sidebar</div>;
+  return (
+    <aside className="w-full h-full row-start-1 text-white bg-blue-500 row-span-12">
+      Sidebar
+    </aside>
+  );
 }
 
 export default Sidebar;
