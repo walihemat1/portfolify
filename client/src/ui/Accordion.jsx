@@ -37,6 +37,19 @@ export default function Accordion() {
           ))}
         </ul>
       </AccordionItem>
+
+      <AccordionItem title="Elements">
+        <ul className="flex flex-col gap-3 p-4 rounded-2xl">
+          {["Image", "Anchor", "Button", "List"].map((item) => (
+            <li
+              key={item}
+              className="p-3 transition border-b-2 hover:bg-border-light text-text-primary-light dark:text-text-primary-dark hover:rounded-xl cursor-grab active:cursor-grabbing"
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
+      </AccordionItem>
     </div>
   );
 }
