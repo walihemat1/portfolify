@@ -1,11 +1,5 @@
-import AppLayout from "./ui/AppLayout";
-
 function App() {
-  return (
-    <>
-      <AppLayout />
-    </>
-  );
+  return <></>;
 }
 
 export default App;
