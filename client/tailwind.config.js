@@ -35,7 +35,7 @@ module.exports = {
           },
         },
         border: {
-          light: "#E5E7EB", // Gray-200 for light theme (Subtle separation between elements)
+          light: "#e5e7eb", // Gray-200 for light theme (Subtle separation between elements)
           dark: "#374151", // Gray-700 for dark theme (Subtle separation between elements.)
         },
       },

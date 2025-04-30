@@ -1,11 +1,10 @@
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
 import BuilderCanvas from "./BuilderCanvas";
-import { useState } from "react";
 
 function AppLayout() {
   return (
-    <div className="grid grid-cols-[20rem_1fr] grid-rows-[auto_1fr] h-screen bg-background-light dark:bg-background-dark">
+    <div className="grid grid-cols-[17rem_1fr] grid-rows-[auto_1fr] h-screen bg-gray-50">
       <Topbar />
 
       <Sidebar />

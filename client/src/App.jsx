@@ -1,13 +1,9 @@
-import Home from "./pages/Home";
-import Builder from "./pages/Builder";
-import Preview from "./pages/Preview";
+import AppLayout from "./components/AppLayout";
 
 function App() {
   return (
     <div>
-      <Home />
-      <Builder />
-      <Preview />
+      <AppLayout />
     </div>
   );
 }

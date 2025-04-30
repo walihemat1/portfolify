@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Accordion from "./Accordion";
 
 const home = {
@@ -24,12 +25,10 @@ const home = {
 };
 
 function Sidebar() {
-  const [homeSection, setHomeSection] = useState({ ...home });
+  // const [homeSection, setHomeSection] = useState({ ...home });
 
   return (
-    <aside className="w-full h-full row-start-1 py-2 overflow-y-auto border-e-2 row-span-12 border-border-light dark:border-border-dark">
-      <Accordion homeSection={homeSection} setHomeSection={setHomeSection} />
-    </aside>
+    <aside className="w-full h-full row-start-1 py-2 overflow-y-auto bg-white dark:bg-background-dark border-e-[1px] border-light row-span-12 dark:border-border-dark"></aside>
   );
 }
 
