@@ -1,7 +1,21 @@
-import { useState } from "react";
+import { MdHome } from "react-icons/md";
+import {
+  FaBriefcase,
+  FaCode,
+  FaCommentDots,
+  FaEnvelope,
+  FaGear,
+  FaGlobe,
+  FaGraduationCap,
+  FaHouse,
+  FaMessage,
+  FaNewspaper,
+  FaPalette,
+} from "react-icons/fa6";
+
 import Accordion from "./Accordion";
 import Heading from "./Heading";
-import { Link, NavLink } from "react-router-dom";
+
 import SidebarItem from "./SidebarItem";
 
 const home = {
@@ -28,11 +42,11 @@ const home = {
 };
 
 function Sidebar() {
-  // const [homeSection, setHomeSection] = useState({ ...home });
+  // const [, setHomeSection] = useState({ ...home });
 
   return (
     <aside className="w-full h-full row-start-1 py-2 overflow-y-auto bg-white dark:bg-background-dark border-e-[1px] border-light row-span-12 dark:border-border-dark md:px-4 md:py-4">
-      <div className="flex items-center gap-4 mb-7">
+      <div className="flex items-center gap-4">
         <img
           src="/images/profile-img.jfif"
           alt="profile-img"
@@ -45,17 +59,57 @@ function Sidebar() {
       </div>
 
       <nav className="">
-        <Heading variant="h3" styles="uppercase mb-4">
+        <Heading variant="h3" styles="uppercase mb-4 mt-7">
           Content Sections
         </Heading>
         <ul className="flex flex-col space-y-1">
-          <SidebarItem to="/home">Hero</SidebarItem>
-          <SidebarItem>Projects</SidebarItem>
-          <SidebarItem>Skills</SidebarItem>
-          <SidebarItem>Blog</SidebarItem>
-          <SidebarItem>Education</SidebarItem>
-          <SidebarItem>Testimonials</SidebarItem>
-          <SidebarItem>Contact</SidebarItem>
+          <SidebarItem to="/home">
+            <FaHouse size={20} />
+            <span>Hero</span>
+          </SidebarItem>
+          <SidebarItem>
+            <FaBriefcase size={20} />
+            <span>Projects</span>
+          </SidebarItem>
+          <SidebarItem>
+            <FaCode size={20} />
+            <span>Skills</span>
+          </SidebarItem>
+          <SidebarItem>
+            <FaNewspaper size={20} />
+            <span>Blog</span>
+          </SidebarItem>
+          <SidebarItem>
+            <FaGraduationCap size={20} />
+            <span>Education</span>
+          </SidebarItem>
+          <SidebarItem>
+            <FaCommentDots size={20} />
+            <span>Testimonials</span>
+          </SidebarItem>
+          <SidebarItem>
+            <FaEnvelope size={20} />
+            <span>Contact</span>
+          </SidebarItem>
+        </ul>
+
+        <Heading variant="h3" styles="uppercase mb-4 mt-7">
+          Settings
+        </Heading>
+
+        <ul className="flex flex-col space-y-1">
+          <SidebarItem>
+            <FaGear size={20} />
+            <span>Settings</span>
+          </SidebarItem>
+          <SidebarItem>
+            <FaPalette size={20} />
+            <span>Appearance</span>
+          </SidebarItem>
+          <SidebarItem>
+            <FaGlobe size={20} />
+            <span>Domain</span>
+          </SidebarItem>
         </ul>
       </nav>
     </aside>
