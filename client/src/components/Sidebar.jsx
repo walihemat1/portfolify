@@ -63,31 +63,31 @@ function Sidebar() {
           Content Sections
         </Heading>
         <ul className="flex flex-col space-y-1">
-          <SidebarItem to="/home">
+          <SidebarItem to="/hero">
             <FaHouse size={20} />
             <span>Hero</span>
           </SidebarItem>
-          <SidebarItem>
+          <SidebarItem to="/projects">
             <FaBriefcase size={20} />
             <span>Projects</span>
           </SidebarItem>
-          <SidebarItem>
+          <SidebarItem to="/skills">
             <FaCode size={20} />
             <span>Skills</span>
           </SidebarItem>
-          <SidebarItem>
+          <SidebarItem to="blog">
             <FaNewspaper size={20} />
             <span>Blog</span>
           </SidebarItem>
-          <SidebarItem>
+          <SidebarItem to="education">
             <FaGraduationCap size={20} />
             <span>Education</span>
           </SidebarItem>
-          <SidebarItem>
+          <SidebarItem to="testimonials">
             <FaCommentDots size={20} />
             <span>Testimonials</span>
           </SidebarItem>
-          <SidebarItem>
+          <SidebarItem to="contact">
             <FaEnvelope size={20} />
             <span>Contact</span>
           </SidebarItem>
@@ -98,7 +98,7 @@ function Sidebar() {
         </Heading>
 
         <ul className="flex flex-col space-y-1">
-          <SidebarItem>
+          <SidebarItem to="settings">
             <FaGear size={20} />
             <span>Settings</span>
           </SidebarItem>

@@ -7,6 +7,7 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Blog from "./pages/Blog";
 import Education from "./pages/Education";
+import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import Settings from "./pages/Settings";
 import PageNotFound from "./pages/PageNotFound";
@@ -23,6 +24,7 @@ function App() {
           <Route path="skills" element={<Skills />} />
           <Route path="blog" element={<Blog />} />
           <Route path="education" element={<Education />} />
+          <Route path="testimonials" element={<Testimonials />} />
           <Route path="contact" element={<Contact />} />
           <Route path="settings" element={<Settings />} />
           <Route path="*" element={<PageNotFound />} />
