@@ -1,6 +1,7 @@
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
 import BuilderCanvas from "./BuilderCanvas";
+import { Outlet } from "react-router-dom";
 
 function AppLayout() {
   return (
@@ -10,7 +11,7 @@ function AppLayout() {
       <Sidebar />
 
       <main className="container mx-auto">
-        <BuilderCanvas />
+        <Outlet />
       </main>
     </div>
   );
