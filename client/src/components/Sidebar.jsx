@@ -1,4 +1,3 @@
-import { MdHome } from "react-icons/md";
 import {
   FaBriefcase,
   FaCode,
@@ -8,12 +7,10 @@ import {
   FaGlobe,
   FaGraduationCap,
   FaHouse,
-  FaMessage,
   FaNewspaper,
   FaPalette,
 } from "react-icons/fa6";
 
-import Accordion from "./Accordion";
 import Heading from "./Heading";
 
 import SidebarItem from "./SidebarItem";
@@ -42,10 +39,8 @@ const home = {
 };
 
 function Sidebar() {
-  // const [, setHomeSection] = useState({ ...home });
-
   return (
-    <aside className="w-full h-full row-start-1 py-2 bg-white dark:bg-background-dark border-e-[1px] border-light row-span-12 dark:border-border-dark md:px-4 md:py-4">
+    <aside className="w-full h-full row-start-1 py-2 bg-white dark:bg-gray-900 border-e-[1px] border-light row-span-12 dark:border-border-dark md:px-4 md:py-4">
       <div className="flex items-center gap-4">
         <img
           src="/images/profile-img.jfif"
@@ -53,13 +48,18 @@ function Sidebar() {
           className="object-cover object-center rounded-full md:w-10 md:h-10"
         />
         <div>
-          <Heading variant="h2">Your Portfolio</Heading>
-          <p className="text-xs text-gray-500">Edit Mode</p>
+          <Heading variant="h2" styles="text-gray-800 dark:text-white">
+            Your Portfolio
+          </Heading>
+          <p className="text-xs text-gray-500 dark:text-gray-400">Edit Mode</p>
         </div>
       </div>
 
       <nav className="overflow-y-auto h-[95%]">
-        <Heading variant="h3" styles="uppercase mb-4 mt-7">
+        <Heading
+          variant="h3"
+          styles="uppercase mb-4 mt-7 dark:text-gray-400 text-gray-500"
+        >
           Content Sections
         </Heading>
         <ul className="flex flex-col space-y-1">
@@ -93,7 +93,10 @@ function Sidebar() {
           </SidebarItem>
         </ul>
 
-        <Heading variant="h3" styles="uppercase mb-4 mt-7">
+        <Heading
+          variant="h3"
+          styles="uppercase mb-4 mt-7 dark:text-gray-400 text-gray-500"
+        >
           Settings
         </Heading>
 
