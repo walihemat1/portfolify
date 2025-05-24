@@ -45,7 +45,7 @@ function Sidebar() {
   // const [, setHomeSection] = useState({ ...home });
 
   return (
-    <aside className="w-full h-full row-start-1 py-2 overflow-y-auto bg-white dark:bg-background-dark border-e-[1px] border-light row-span-12 dark:border-border-dark md:px-4 md:py-4">
+    <aside className="w-full h-full row-start-1 py-2 bg-white dark:bg-background-dark border-e-[1px] border-light row-span-12 dark:border-border-dark md:px-4 md:py-4">
       <div className="flex items-center gap-4">
         <img
           src="/images/profile-img.jfif"
@@ -58,7 +58,7 @@ function Sidebar() {
         </div>
       </div>
 
-      <nav className="">
+      <nav className="overflow-y-auto h-[95%]">
         <Heading variant="h3" styles="uppercase mb-4 mt-7">
           Content Sections
         </Heading>
@@ -102,11 +102,11 @@ function Sidebar() {
             <FaGear size={20} />
             <span>Settings</span>
           </SidebarItem>
-          <SidebarItem>
+          <SidebarItem to="">
             <FaPalette size={20} />
             <span>Appearance</span>
           </SidebarItem>
-          <SidebarItem>
+          <SidebarItem to="">
             <FaGlobe size={20} />
             <span>Domain</span>
           </SidebarItem>
